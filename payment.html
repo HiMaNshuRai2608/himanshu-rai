@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfortCove - Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #50b3a2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        form {
+            display: block;
+            margin-top: 20px;
+        }
+
+        form input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        form button {
+            background-color: #50b3a2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        form button:hover {
+            background-color: #e8491d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ComfortCove 🏠</h1>
+    </header>
+
+    <section>
+        <div class="modal-content">
+            <h2>Select Payment Method</h2>
+            <form action="delivery.html" method="get">
+                <input type="radio" id="cod" name="payment-method" value="cod">
+                <label for="cod">Cash on Delivery (COD)</label><br>
+                <input type="radio" id="net-banking" name="payment-method" value="net-banking">
+                <label for="net-banking">Net Banking</label><br>
+                <input type="radio" id="upi" name="payment-method" value="upi">
+                <label for="upi">UPI</label><br>
+                <input type="radio" id="emi" name="payment-method" value="emi">
+                <label for="emi">EMI</label><br><br>
+                <button type="submit">Proceed to Delivery</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
